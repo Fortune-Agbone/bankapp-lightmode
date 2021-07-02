@@ -1,0 +1,707 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*style for scroll bar*/
+
+::-moz-scrollbar{
+    width: 11px;
+    background-color: rgb(249, 249, 251);
+    background-color: hsl(220, 27%, 98%);
+    background-color: #f8f9fb;
+}
+
+::-moz-scrollbar-thumb{
+    background-color: hsl(300, 100%, 31%);
+    background-color: #a000a0;
+    background-color: rgb(160, 0, 160);
+}
+
+::-webkit-scrollbar{
+    width: 11px;
+    background-color: rgb(249, 249, 251);
+    background-color: hsl(220, 27%, 98%);
+    background-color: #f8f9fb;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: hsl(300, 100%, 31%);
+    background-color: #a000a0;
+    background-color: rgb(160, 0, 160);
+}
+
+/*end of scroll bar style*/
+
+body{
+    min-width: 280px;
+    min-height: 300px;
+    letter-spacing: 0.24px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(249, 249, 251);
+    background-color: hsl(220, 27%, 98%);
+    background-color: #f8f9fb;
+}
+
+button{
+    letter-spacing: inherit;
+}
+
+button:active{
+    border-color: none;
+}
+
+/*style for webpage preloader*/
+.pageloaderdiv{   
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 249, 251);
+    background-color: hsl(220, 27%, 98%);
+    background-color: #f8f9fb;
+    transition: opacity 0.5s ease;
+}
+
+.pageloaderdiv img{
+    width: 197px;
+    height: 178px;
+    -webkit-animation: appicon 0.8s ease infinite alternate;
+            animation: appicon 0.8s ease infinite alternate;
+}
+
+@-webkit-keyframes appicon{
+    from{
+        transform: translateY(0px);
+    }
+
+    to{
+        transform: translateY(10px);
+    }
+}
+
+@keyframes appicon{
+    from{
+        transform: translateY(0px);
+    }
+
+    to{
+        transform: translateY(10px);
+    }
+}
+
+.pageloader-finish{
+    opacity: 0;
+    pointer-events: none;
+}
+/*end of webpage preloader style*/
+
+/*style for webapp logo*/
+.applogo img{
+    width: 200px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+/*end of webapp logo style*/
+
+/*notice box style*/
+.noticebox-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 0%, 0.6);
+    background-color: #00000099;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.noticebox {
+    width: 200px;
+    height: 200px;
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 20px 20px 75px 20px;
+    color: hsl(0, 0%, 100%);
+    color: #ffffff;
+    color: white;
+    border-radius: 4px;
+    background-color: hsl(0, 100%, 50%);
+    background-color: #ff0000;
+    background-color: red;
+}
+
+.noticebox #notice-closebtn {
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: -15px;
+    transform: rotate(45deg);
+}
+/*end of notice box style*/
+
+
+/*style for the circles on the landing page*/
+
+.circle-container, .circle-container .circle-two, .circle-container .circle-three{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    position: fixed;
+    top: 0px;
+    right: 100px;
+    margin-right: -100px;
+    border: 15px solid rgb(211, 3, 211);
+    border: 15px solid hsl(300, 97%, 42%);
+    border: 15px solid #d303d2;
+    z-index: -1;
+    -webkit-animation: ring1 1s linear;
+            animation: ring1 1s linear;
+}
+
+@-webkit-keyframes ring1{
+    0%{
+        right: -100px; 
+    }
+}
+
+@keyframes ring1{
+    0%{
+        right: -100px; 
+    }
+}
+
+.circle-container .circle-two{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin: 10px;
+}
+
+.circle-container .circle-three{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 10px;
+}
+
+.second-circle-container, .second-circle-container .circle-two, .second-circle-container .circle-three{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    position: fixed;
+    bottom: 100px;
+    margin-bottom: -10px;
+    border: 15px solid rgb(211, 3, 211);
+    border: 15px solid hsl(300, 97%, 42%);
+    border: 15px solid #d303d2;
+    z-index: -1;
+    -webkit-animation: ring2 1.5s linear;
+            animation: ring2 1.5s linear;
+}
+
+@-webkit-keyframes ring2{
+    0%{
+        bottom: -100px; 
+    }
+}
+
+@keyframes ring2{
+    0%{
+        bottom: -100px; 
+    }
+}
+
+.second-circle-container .circle-two{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin: 10px;
+}
+
+.second-circle-container .circle-three{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 10px;
+}
+
+.third-circle-container, .third-circle-container, .third-circle-container .circle-two, .third-circle-container .circle-three{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 0;
+    margin-bottom: 90px;
+    border: 15px solid rgb(211, 3, 211);
+    border: 15px solid hsl(300, 97%, 42%);
+    border: 15px solid #d303d2;
+    z-index: -1;
+    -webkit-animation: ring3 2s linear;
+            animation: ring3 2s linear;
+}
+
+@-webkit-keyframes ring3{
+    0%{
+        bottom: -100px; 
+    }
+}
+
+@keyframes ring3{
+    0%{
+        bottom: -100px; 
+    }
+}
+
+.third-circle-container .circle-two{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin: 10px;
+}
+
+.third-circle-container .circle-three{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 10px;
+}
+
+/*end of circle style*/
+
+/*style for login form*/
+.formdiv a{
+    color: rgb(211, 3, 211);
+    color: hsl(300, 97%, 42%);
+    color: #d303d2;
+}
+
+.formdiv{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 25vh;
+}
+
+.formdiv h3{
+    font-size: 25px;
+    font-weight: normal;
+    color: rgb(129, 131, 130);
+    color: hsl(150, 1%, 51%);
+    color: #828483;
+    margin-bottom: 30px; 
+    text-align: center;
+}
+
+.formdiv #account-name{
+    color: rgb(54, 68, 73);
+    color: hsl(196, 15%, 25%);
+    color: #354348;
+}
+
+.form{
+    width: 100%;
+}
+
+.form input{
+    width: 98%;
+    height: 50px;
+    border: 1px solid rgb(237, 237, 237);
+    border: 1px solid hsl(0, 0%, 93%);
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+}
+
+.form #passinput:focus{
+    outline: none;
+}
+
+.form #passinput{
+    padding-left: 10px;
+}
+
+.form #retrievepass{
+    float: right;
+    margin: 10px 0px;
+}
+
+#signinbtn{
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    color: #ffffff;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: hsl(300, 99%, 29%);
+    background-color: #950195;
+    background-color: rgb(149, 1, 149);
+}
+
+#signinbtn:hover{
+    transition: 0.5s;
+    background-color: hsl(300, 100%, 25%);
+    background-color: #800080;
+    background-color: purple;
+}
+
+#signinbtn:active{
+    outline: none;
+}
+
+#signinbtn:focus{
+    outline: none;
+}
+
+#device-unlock{
+    color: rgb(129, 131, 130);
+    color: hsl(150, 1%, 51%);
+    color: #828483;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/*end of login form style */
+
+/*style webpage mode switch*/
+.bankapp-mode{
+    width: 25px;
+    cursor: pointer;
+    color: hsl(300, 99%, 29%);
+    color: #950195;
+    color: rgb(149, 1, 149);
+    font-size: 25px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+/*end of mode switch style*/
+
+/*style for bottom navigation buttons*/
+.nav-btns{
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    bottom: 0;
+    background-color: hsl(0, 0%, 100%);
+    background-color: #ffffff;
+    background-color: white;
+}
+
+.navbtn-position{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav-btns button{
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(211, 3, 211);
+    color: hsl(300, 97%, 42%);
+    color: #d303d2;
+    background-color: hsl(0, 0%, 100%);
+    background-color: #ffffff;
+    background-color: white;
+}
+
+.nav-btns button:hover{
+    color: hsl(0, 0%, 71%);
+    color: #b4b4b4;
+    color: rgb(180, 180, 180);
+    font-weight: bold;
+}
+
+.nav-btns button:active{
+    outline: none;
+}
+
+.nav-btns button:focus{
+    outline: none;
+}
+
+.nav-block{
+    display: block;
+}
+/*end of bottom navigation style*/
+
+
+/*style for footer */
+footer{
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    margin: 5px 0px;
+    text-align: center;
+    color: rgb(211, 3, 211);
+    color: hsl(300, 97%, 42%);
+    color: #d303d2;
+    background-color: hsl(0, 0%, 100%);
+    background-color: #ffffff;
+    background-color: white;
+}
+
+footer hr{
+    width: 50%;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(211, 3, 211);
+    border: 1px solid hsl(300, 97%, 42%);
+    border: 1px solid #d303d2;
+    background-color: rgb(211, 3, 211);
+    background-color: hsl(300, 97%, 42%);
+    background-color: #d303d2;
+}
+/*style for footer */
+
+@media(max-width: 1120px){
+    .circle-container{
+        width: 150px;
+        height: 150px;
+    }
+
+    .circle-container .circle-two{
+        width: 100px;
+        height: 100px;
+    }
+
+    .circle-container .circle-three{
+        display: none;
+    }
+
+    
+    .second-circle-container{
+        width: 150px;
+        height: 150px;
+    }
+
+
+    .second-circle-container .circle-two{
+        width: 100px;
+        height: 100px;
+    }
+
+    .second-circle-container .circle-three{
+        display: none;
+    }
+
+    .third-circle-container .circle-three{
+        display: none;
+    }
+
+    .third-circle-container{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .third-circle-container .circle-two{
+        width: 100px;
+        height: 100px;
+    }   
+}
+
+
+@media(max-width: 510px){
+    .nav-btns button{
+        padding: 5px;
+    }
+}
+
+
+@media(max-width: 560px){
+        .applogo img{
+            width: 150px;
+        }
+
+        .circle-container{
+            width: 80px;
+            height: 80px;
+        }
+    
+        .circle-container .circle-two{
+            display: none;
+        }
+        
+        .circle-container .circle-three{
+            display: none;
+        }
+    
+        
+        .second-circle-container{
+            width: 80px;
+            height: 80px;
+        }
+    
+    
+        .second-circle-container .circle-two{
+            display: none;
+        }
+    
+        .second-circle-container .circle-three{
+            display: none;
+        }
+    
+        .third-circle-container{
+            width: 80px;
+            height: 80px;
+        }
+        
+        .third-circle-container .circle-two{
+            display: none;
+        }
+        
+        .third-circle-container .circle-three{
+            display: none;
+        }
+
+        .formdiv{
+            width: 350px;
+            margin: 0 auto;
+            margin-top: 25vh;
+        }
+    
+        #signinbtn{
+            width: 101%;
+        }
+}
+
+@media(max-width: 400px){
+    .applogo img{
+        width: 130px;
+    }
+
+    .nav-btns footer{
+        font-size: 13px;
+    }
+
+    .formdiv{
+        width: 250px;
+        margin: 0 auto;
+        margin-top: 20vh;
+    }
+
+    #signinbtn{
+        width: 102%;
+    }
+
+    .bankapp-mode{
+        position: fixed;
+        right: 15px;
+        bottom: 100px;
+    }
+}
+
+@media(max-width: 360px){
+    .nav-btns button{
+        padding: 2px;
+        font-size: 13.5px;
+    }
+
+    footer{
+        font-size: 13px;
+    }
+}
+
+@media(max-height: 570px){
+    .circle-container .circle-three{
+        display: none;
+    }
+
+    .second-circle-container .circle-three{
+        display: none;
+    }
+
+    .third-circle-container .circle-three{
+        display: none;
+    }
+}
+
+@media(max-height: 560px){
+    .circle-container .circle-three{
+        display: none;
+    }
+
+    .second-circle-container .circle-three{
+        display: none;
+    }
+
+    .third-circle-container{
+        display: none;
+    }
+}
+
+@media(max-height: 500px){
+    .applogo img{
+        width: 110px;
+    }
+
+    .circle-container{
+        width: 50px;
+        height: 50px;
+    }
+
+    .second-circle-container{
+        width: 50px;
+        height: 50px;
+    }
+
+    .formdiv{
+        margin-top: 15vh;
+    }
+}
+
+@media(max-height: 450px){
+    .formdiv{
+        margin-top: 15vh;
+    }
+
+    .formdiv form input{
+        height: 40px;
+    }
+}
+
+@media(max-height: 410px){
+    .formdiv h3{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .formdiv{
+        width: 250px;
+        margin-top: 12vh;
+    }
+
+    #device-unlock{
+        margin-top: 10px;
+    }
+}
+
+@media(max-height: 310px){
+    .noticebox {
+        width: 230px;
+        height: 100px;
+        font-size: 14px;
+        padding-top: 15px;
+        padding-bottom: 90px;
+    }
+}

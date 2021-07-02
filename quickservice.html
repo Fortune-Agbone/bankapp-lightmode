@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="expires" content="00:05:00 WAT" />
+    <title>BankApp | Quick Services</title>
+    <link rel="shortcut icon" href="images/bankdarkicon.png" />
+    <link href="css/all.css" rel="stylesheet" type="text/css" />
+    <link href="css/indexstyle.css" rel="stylesheet" type="text/css" />
+    <link href="css/servicestyle.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/jquery.js" type="text/javascript"></script>
+    <!-- <script src="https://kit.fontawesome.com/ed1c825809.js" crossorigin="anonymous" defer></script> -->
+</head>
+
+<body>
+    <!--html for webpage preloader-->
+    <div class="pageloaderdiv">
+        <img class="appicon" src="images/bankicon.png" alt="BankApp Icon" />
+    </div>
+    <!--end of preloader html-->
+
+    <!--html for webpage heading-->
+    <header>
+        <div class="pageheading">
+            <h3>Quick Services</h3>
+        </div>
+    </header>
+    <!--end of webpage heading html-->
+
+    <!--html for webpage search bar-->
+    <div class="searchformdiv">
+        <form>
+            <input type="search" placeholder="Search" />
+        </form>
+    </div>
+    <!--end of html search bar-->
+
+    <!--html for quick services page intro text-->
+    <div class="pageintrodiv">
+        <h1>BankApp strives because it has successfully taken Online Banking to a whole new <s>level</s> dimension.</h1>
+
+        <img src="images/illustrationsvgs/wallet.svg" alt="Wallet Image" />
+    </div>
+    <!--end of qucik services page intro text-->
+
+    <!--initial html box template: for transfer box row-->
+    <div class="transfer">
+        <h4>Transfers</h4>
+
+        <!--initial html box template: for quick transfer box column-->
+        <div class="bankapp-to-bankapp-container">
+            <button id="boxcontent-click1" class="transbtn" title="BankApp to BankApp">
+                <i class="fas fa-user-friends column-icons"></i> BankApp to BankApp <i
+                    class="fas fa-angle-down column-dropdown-icon"></i>
+            </button>
+
+            <div id="bankapp-to-bankapp-main-box" class="bankapp-to-bankapp-main-contentbox">
+                <h4 class="sub-columnheading">Quick BankApp Transfer</h4>
+
+                <div class="account-typediv">
+                    <button title="Account Type">
+                        <div class="account-num">012****789</div>
+                        <div class="account-type">PREMIER SAVINGS</div>
+                    </button>
+                </div>
+
+                <div class="translimit">
+                    <h5>Daily Transaction Limit: &#8358; 20,000</h5>
+
+                    <progress max="100" value="20"></progress>
+                    <h5 class="limit-text">
+                        <span><i class="fas fa-square"></i> &#8358;4,000.00 used</span> <span class="trans-remainder">N
+                            16,000.00 remaining <i class="fas fa-stop"></i></span>
+                    </h5>
+                </div>
+
+
+                <!--html for bankapp-to-bankapp form-->
+                <div class="service-formdiv">
+                    <form class="service-form">
+                        <div>
+                            <select title="Select Beneficiary">
+                                <option>NO BENEFICIARIES AVALIABLE</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <input type="text" placeholder="Amount" />
+                        </div>
+
+                        <div>
+                            <h5>Maximum Account: <span class="amount">&#8358; 20,000.00</span></h5>
+                        </div>
+
+                        <div>
+                            <input type="text" placeholder="Narration" />
+                        </div>
+
+                        <div>
+                            <input class="proceedbtn" type="submit" value="PROCEED" />
+                        </div>
+                    </form>
+                </div>
+                <!--end of bankapp-to-bankapp form-->
+
+                <hr />
+
+                <div><button id="boxcontent-buttonclick1" class="foldboxbtn" title="Close Current Column"></button>
+                </div>
+            </div>
+            <!--end of html for quick transfer box column-->
+            
+
+            <img class="illustrationsvg column-illustration-image1" src="images/illustrationsvgs/bankapp-to-bankapp.svg"
+                alt="BankApp-to-BankApp" />
+        </div>
+
+
+        <!--duplicate html quick transfer box column but for other bank box column-->
+        <div class="bankapp-to-bankapp-container otherbank-container">
+            <button id="boxcontent-click2" class="transbtn" title="BankApp to BankApp">
+                <i class="fas fa-people-arrows column-icons"></i> Other Banks <i
+                    class="fas fa-angle-down column-dropdown-icon"></i>
+            </button>
+
+            <!--initial html box template: for quick transfer box column-->
+            <div id="otherbank-main-contentbox" class="bankapp-to-bankapp-main-contentbox otherbank-main-contentbox">
+                <h4 class="sub-columnheading">Other Bank Transfer</h4>
+
+                <div class="account-typediv">
+                    <button title="Account Type">
+                        <div class="account-num">012****789</div>
+                        <div class="account-type">PREMIER SAVINGS</div>
+                    </button>
+                </div>
+
+                <div class="translimit">
+                    <h5>Daily Transaction Limit: &#8358;20,000</h5>
+
+                    <progress max="100" value="10"></progress>
+                    <h5 class="limit-text">
+                        <span><i class="fas fa-square"></i> &#8358; 2,000.00 used</span> <span
+                            class="trans-remainder">&#8358;
+                            18,000.00 remaining <i class="fas fa-stop"></i></span>
+                    </h5>
+                </div>
+
+                <!--html for bankapp-to-bankapp form-->
+                <div class="service-formdiv">
+                    <form class="service-form">
+                        <div>
+                            <select title="Select Beneficiary">
+                                <option>SELECT BENEFICIARY</option>
+                                <option>CLOTHES SHOP</option>
+                                <option>HAPPINESS</option>
+                                <option>FAITH</option>
+                                <option>MUM</option>
+                                <option>R.C.C.C.G LTW</option>
+                                <option>BRIDGET P.O.S</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <input type="text" placeholder="Amount" />
+                        </div>
+
+                        <div>
+                            <h5>Maximum Account: <span class="amount">&#8358;10,000.00</span></h5>
+                        </div>
+
+                        <div>
+                            <input type="text" placeholder="Narration" />
+                        </div>
+
+                        <div>
+                            <input class="proceedbtn" type="submit" value="PROCEED" />
+                        </div>
+                    </form>
+                </div>
+                <!--end of bankapp-to-bankapp form-->
+
+                <hr />
+
+                <div><button id="boxcontent-buttonclick2" class="foldboxbtn" title="Close Current Column"></button>
+                </div>
+            </div>
+
+            <img class="illustrationsvg column-illustration-image2" src="images/illustrationsvgs/otherbank.svg"
+                alt="BankApp-to-BankApp" />
+        </div>
+        <!--end of other bank transfer box column-->
+
+        <!--duplicate html quick transfer box column but for nearby payment box column-->
+        <div class="bankapp-to-bankapp-container otherbank-container">
+            <button id="boxcontent-click3" class="transbtn bank-to-bankbtn" title="BankApp to BankApp">
+                <i class="fas fa-street-view column-icons"></i> Nearby Payment <i
+                    class="fas fa-angle-down column-dropdown-icon"></i>
+            </button>
+
+            <!--initial html box template: for quick transfer box column-->
+            <div id="payment-main-contentbox" class="bankapp-to-bankapp-main-contentbox">
+                <div class="locationdiv">
+
+                    <div class="location-meter">
+                        <i class="fas fa-search-location"></i>
+                    </div>
+
+                    <div class="locationdiv-text">
+                        <h4>Receive mode
+                            <p>Do not exit this screen until your payment is complete</p>
+                        </h4>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div>
+                    <button id="boxcontent-buttonclick3" class="foldboxbtn" title="Close Current Column"></button>
+                </div>
+            </div>
+            
+            <img class="illustrationsvg column-illustration-image3" src="images/illustrationsvgs/payment.svg"
+                alt="BankApp-to-BankApp" />
+        </div>
+        <!--end of nearby payment box column-->
+    </div>
+    <!--end of html for transfer box row-->
+
+
+
+
+
+
+
+    <!--duplicate initial html box template: for payment box row-->
+    <div class="transfer paymentbox">
+        <h4>Payments</h4>
+
+        <!--initial html box template: for quick transfer box column-->
+        <div class="bankapp-to-bankapp-container">
+            <button id="box-click1" class="transbtn" title="BankApp to BankApp">
+                <i class="fas fa-money-bill column-icons"></i> Bills Payment <i
+                    class="fas fa-angle-down column-dropdown-icon"></i>
+            </button>
+
+            <div id="paybills-contentbox" class="bankapp-to-bankapp-main-contentbox">
+                <h4 class="sub-columnheading">Bill Payment</h4>
+
+                <div class="account-typediv">
+                    <button title="Account Type">
+                        <div class="account-num">012****789</div>
+                        <div class="account-type">PREMIER SAVINGS</div>
+                    </button>
+                </div>
+
+                <!--html for bankapp-to-bankapp form-->
+                <div class="service-formdiv">
+                    <form class="service-form">
+                        <div>
+                            <select title="Select Category">
+                                <option>SELECT CATEGORY</option>
+                                <option>CABLE TV</option>
+                                <option>COLLECTIONS</option>
+                                <option>DATA PURCHASE</option>
+                                <option>ECOMMERCE</option>
+                                <option>EDUCATION</option>
+                                <option>FINANCIAL SERVICE</option>
+                                <option>LOTTERY AND BETTING</option>
+                                <option>MOBILE TOPUP</option>
+                                <option>RELIGIOUS PAYMENT</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <!--end of bankapp-to-bankapp form-->
+
+                <hr />
+
+                <div>
+                    <button id="content-click1" class="foldboxbtn" title="Close Current Column"></button>
+                </div>
+            </div>
+            <!--end of html for quick transfer box column-->
+
+            <img class="illustrationsvg illustration-image1" src="images/illustrationsvgs/bills.svg"
+                alt="BankApp-to-BankApp" />
+        </div>
+
+
+        <!--duplicate html quick transfer box column but for other bank box column-->
+        <div class="bankapp-to-bankapp-container otherbank-container">
+            <button id="box-click2" class="transbtn" title="BankApp to BankApp">
+                <i class="fas fa-mobile column-icons"></i> Mobile Topup <i
+                    class="fas fa-angle-down column-dropdown-icon"></i>
+            </button>
+
+            <!--initial html box template: for quick transfer box column-->
+            <div id="mobiletopup-contentbox" class="bankapp-to-bankapp-main-contentbox otherbank-main-contentbox">
+                <h4 class="sub-columnheading">Other Bank Transfer</h4>
+
+                <div class="account-typediv">
+                    <button title="Account Type">
+                        <div class="account-num">012****789</div>
+                        <div class="account-type">PREMIER SAVINGS</div>
+                    </button>
+                </div>
+
+                <div class="translimit">
+                    <h5>Daily Transaction Limit: &#8358; 20,000</h5>
+
+                    <progress max="100" value="10"></progress>
+                    <h5 class="limit-text">
+                        <span><i class="fas fa-square"></i> &#8358;2,000.00 used</span> <span
+                            class="trans-remainder">&#8358;
+                            18,000.00 remaining <i class="fas fa-stop"></i></span>
+                    </h5>
+                </div>
+
+                <!--html for bankapp-to-bankapp form-->
+                <div class="service-formdiv">
+                    <form class="service-form">
+                        <div>
+                            <h5 class="amount">Select network provider</h5>
+
+                            <div class="networkbtns">
+                                <br />
+
+                                <button><img src="images/networkimages/mtn.jpg" alt="MTN" /></button>
+                                <button><img src="images/networkimages/airtel.png" alt="Airtel" /></button>
+                                <button><img src="images/networkimages/glo.jpg" alt="GLO" /></button>
+                                <button><img src="images/networkimages/9mobile.png" alt="9mobile" /></button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <select title="Select Beneficiary">
+                                <option>SELECT BENEFICIARY</option>
+                                <option>Booboo's phone number</option>
+                                <option>My glo number #08143215678</option>
+                                <option>My MTN number</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <h5 class="amount">Select amount</h5>
+
+                            <div class="airtime-amountbtns">
+
+                                <button>&#8358; 100</button>
+                                <button>&#8358; 500</button>
+                                <button>&#8358; 1,000</button>
+                                <button>&#8358; 2,000</button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <input type="text" placeholder="Amount" />
+                        </div>
+
+                        <div>
+                            <h5>Maximum Account: <span class="amount">&#8358; 5,000.00</span></h5>
+                        </div>
+
+                        <div>
+                            <input class="proceedbtn" type="submit" value="PROCEED" />
+                        </div>
+                    </form>
+                </div>
+                <!--end of bankapp-to-bankapp form-->
+
+                <hr />
+
+                <div>
+                    <button id="content-click2" class="foldboxbtn" title="Close Current Column"></button>
+                </div>
+            </div>
+
+            <img class="illustrationsvg illustration-image2" src="images/illustrationsvgs/topup.svg"
+                alt="BankApp-to-BankApp" />
+        </div>
+        <!--end of other bank transfer box column-->
+
+
+
+        <!--duplicate html quick transfer box column but for nearby payment box column-->
+        <div class="bankapp-to-bankapp-container otherbank-container">
+            <button id="box-click3" class="transbtn bank-to-bankbtn" title="BankApp to BankApp">
+                <i class="fas fa-clipboard-list column-icons"></i> LCC Lookup <i
+                    class="fas fa-angle-down column-dropdown-icon"></i>
+            </button>
+
+            <!--initial html box template: for quick transfer box column-->
+            <div id="lookup-contentbox" class="bankapp-to-bankapp-main-contentbox">
+                <!--html for bankapp-to-bankapp form-->
+                <div class="service-formdiv">
+                    <form class="service-form">
+                        <div>
+                            <input type="text" placeholder="Customer Reference" />
+                        </div>
+
+                        <div>
+                            <input class="proceedbtn" type="submit" value="PROCEED" />
+                        </div>
+                    </form>
+                </div>
+                <!--end of bankapp-to-bankapp form-->
+
+                <hr />
+
+                <div>
+                    <button id="content-click3" class="foldboxbtn" title="Close Current Column"></button>
+                </div>
+            </div>
+
+            <img class="illustrationsvg illustration-image3" src="images/illustrationsvgs/lookup.svg"
+                alt="BankApp-to-BankApp" />
+        </div>
+        <!--end of nearby payment box column-->
+    </div>
+    <!--end of html for transfer box row-->
+
+
+    <!--html for navigation menu buttons-->
+    <div class="nav-btns">
+        <!-- webpage scroll-to-top button -->
+        <button class="btnScrollToTop" title="Scroll-to-Top">
+            <i class="fas fa-arrow-circle-up"></i>
+        </button>
+        <!-- end of scroll-to-top button -->
+
+        <div class="navbtn-position">
+            <a href="index.html"><button><span><i class="fas fa-lock"></i></span><span
+                        class="nav-block">Login</span></button></a>
+            <a href="quickservice.html"><button id="quickservicebtn"><span><i class="far fa-credit-card"></i><span
+                            class="nav-block">Quick
+                            Services</span></button></a>
+            <a href="support.html"><button><span><i class="fas fa-headset"></i></span><span
+                        class="nav-block">Support</span></button></a>
+            <a href="settings.html"><button><span><i class="fas fa-cog"></i></span><span
+                        class="nav-block">Settings</span></button></a>
+        </div>
+    </div>
+    <!--end of nav menu buttons-->
+
+
+    <!--html for the app's copright and authors name-->
+    <footer>
+        <hr />
+
+        <div>&copy; copyright 2021 | Developed by Fortune Agbone</div>
+        <script src="scripts/preloaderscript.js" type="text/javascript"></script>
+        <script src="scripts/stickynavbarscript.js" type="text/javascript"></script>
+        <script src="scripts/columntogglebuttonscript.js" type="text/javascript"></script>
+        <script src="scripts/scrollupscript.js" type="text/javascript"></script>
+    </footer>
+    <!--end of html for the app's copright and author's name-->
+</body>
+
+</html>

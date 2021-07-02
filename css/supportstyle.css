@@ -1,0 +1,161 @@
+/*styles for suppot box and support buttons*/
+.supportbtn{
+    margin-left: 2.5%;
+    text-align: left;
+}
+
+.supportbtn button{
+    width: 40%;
+}
+/*end of support box and support button styles*/
+
+/*styles for inflow detail box column*/
+.support-inflowdiv p {
+    color: rgb(54, 68, 73);
+    color: hsl(196, 15%, 25%);
+    color: #354348;
+    font-size: 90%;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.inflow-currencybtn .currencyicon {
+    width: 15%;
+    float: left;
+    font-size: 20%;
+    color: hsl(0, 0%, 50%);
+    color: #808080;
+    color: grey;
+    font-size: 30px;
+    position: relative;
+    top: 35px;
+}
+
+.inflow-currencybtn .currencytext{
+    width: 80%;
+    float: left;
+    text-align: left;
+    position: relative;
+    top: 10px;
+    line-height: 17px;
+}
+
+.currencytext h4{
+    color: hsl(0, 0%, 29%);
+    color: #4b4b4b;
+    color: rgb(75, 75, 75);
+}
+
+.inflow-currencybtn button {
+    width: 100%;
+    height: 110px;
+    display: block;
+    border: none;
+    overflow: scroll;
+    color: hsl(0, 0%, 100%);
+    color: #ffffff;
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 3px;
+    border-bottom: 1px solid hsl(0, 0%, 71%);
+    border-bottom: 1px solid #b4b4b4;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    background-color: rgb(195, 196, 198);
+    background-color: hsl(220, 3%, 77%);
+    background-color: #c3c4c6;
+}
+
+.inflow-currencybtn button:active{
+    outline: none;
+}
+
+.inflow-currencybtn button:focus{
+    outline: none;
+}
+/*end of inflow details style*/
+
+.fqadiv .fqabtn button{
+    height: 70px;
+    font-size: 85%;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: left;
+    overflow: hidden;
+    letter-spacing: 0.5px;
+    color: hsl(0, 0%, 29%);
+    color: #4b4b4b;
+    color: rgb(75, 75, 75);
+    border-bottom: 1px solid rgb(207, 207, 207);
+    border-bottom: 1px solid hsl(0, 0%, 81%);
+    border-bottom: 1px solid #cfcfcf;
+    background-color: rgb(195, 196, 198);
+    background-color: hsl(220, 3%, 77%);
+    background-color: #c3c4c6;
+}
+
+.fqadiv .fqabtn button:active{
+    outline: none;
+}
+
+.fqadiv .fqabtn button:focus{
+    outline: none;
+}
+
+.fqadiv .fqabtn .fa-angle-down{
+    color: hsl(300, 100%, 50%);
+    color: #ff00ff;
+    color: rgb(255, 0, 255);
+    float: right;
+}
+
+.fqabtn .fqa-infobox {
+    height: 80px;
+    padding: 5px 15px;
+    margin-top: -2px;
+    font-size: 90%;
+    line-height: 125%;
+    overflow: scroll;
+    display: none;
+    color: hsl(0, 0%, 100%);
+    color: #ffffff;
+    color: white;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    border-bottom: 1px solid hsl(0, 0%, 81%);
+    border-bottom: 1px solid #cfcfcf;
+    background-color: rgb(195, 196, 198);
+    background-color: hsl(220, 3%, 77%);
+    background-color: #c3c4c6;
+}
+
+.fqabtn .infobox9{
+    border-bottom: none;
+}
+
+.social-media{
+    padding-bottom: 0px;
+}
+
+.callus-container{
+    width: 100%;
+}
+
+.callus-container .transbtn{
+    width: 32%;
+}
+
+@media(max-width: 800px){
+    .callus-container{
+        width: 80%;
+    }
+
+    .callus-container .transbtn{
+        width: 100%;
+        display: block;
+    }
+}
+
+@media(max-width: 500px){
+    .callus-container{
+        width: 90%;
+    }
+}

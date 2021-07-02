@@ -1,0 +1,737 @@
+/*style for quick services webpage heading*/
+.pageheading{
+    color: hsl(0, 0%, 100%);
+    color: #ffffff;
+    color: white;
+    font-size: 20px;
+    padding: 30px 0px;
+    text-align: center;
+    background-color: hsl(300, 100%, 31%);
+    background-color: #a000a0;
+    background-color: rgb(160, 0, 160);
+}
+/*end of webpage heading style*/
+
+/*style for quick services webpage intro*/
+.pageintrodiv{
+    height: 350px;
+    font-size: 20px;
+    padding: 40px 0px 30px 0px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(211, 3, 211);
+    color: hsl(300, 97%, 42%);
+    color: #d303d2;
+    display: inline-block;
+}
+
+.pageintrodiv h1{
+    width: 50%;
+    display: inherit;
+    text-align: left;
+    z-index: 200;
+}
+
+.pageintrodiv img{
+    width: 30%;
+    display: inherit;
+    position: relative;
+    filter: drop-shadow(0px 0px 3px rgb(211, 3, 211));
+    filter: drop-shadow(0px 0px 3px hsl(300, 97%, 42%));
+    filter: drop-shadow(0px 0px 3px #d303d2);
+    animation: elevation 2s ease infinite alternate;
+}
+
+@keyframes elevation{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(40px);
+    }
+}
+/*end of intro style*/
+
+
+/*style for webpage search bar*/
+.searchformdiv{
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+
+.searchformdiv form input{
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    color: rgb(54, 68, 73);
+    color: hsl(196, 15%, 25%);
+    color: #354348;
+    transition: 1s;
+    border-radius: 3px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: hsl(0, 0%, 100%);
+    background-color: #ffffff;
+    background-color: white;
+}
+
+.searchformdiv form input:focus{
+    outline: 0;
+    transition: 1s;
+    width: 280px;
+}
+
+.searchformdiv.active{
+    z-index: 1;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+/*end of webpage search bar style*/
+
+/*style for transfer box row*/
+.transfer{
+    overflow: scroll;
+    margin-top: 10px;
+    padding: 20px 0px 100px 3%;
+    background-color: rgb(232, 232, 232);
+    background-color: hsl(0, 0%, 91%);
+    background-color: #e9e9e9;
+}
+
+.transfer h4{
+    padding-bottom: 5px;
+    color: rgb(54, 68, 73);
+    color: hsl(196, 15%, 25%);
+    color: #354348;
+}
+
+.transbtn{
+    width: 100%;
+    height: 50px;
+    color: hsl(0, 0%, 100%);
+    color: #ffffff;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: rgb(195, 196, 198);
+    background-color: hsl(220, 3%, 77%);
+    background-color: #c3c4c6;
+}
+
+.transfer button:active{
+    border: none;
+}
+
+.transbtn:active{
+    outline: none;
+}
+
+.transbtn:focus{
+    outline: none;
+}
+
+.transbtn .column-icons{
+    color: rgb(211, 3, 211);
+    color: hsl(300, 97%, 42%);
+    color: #d203d1;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: rgb(198, 179, 204);
+    background-color: hsl(286, 20%, 75%);
+    background-color: #c5b1cb;
+}
+
+.transfer .column-dropdown-icon{
+    padding: 0;
+    float: right;
+    color: rgb(211, 3, 211);
+    color: hsl(300, 97%, 42%);
+    color: #d203d1;
+    margin: 10px 20px 0px 0px;
+    background: none;
+}
+
+.bankapp-to-bankapp-container{
+    width: 32%;
+    float: left;
+}
+
+.bankapp-to-bankapp-container .illustrationsvg{
+    width: 100%;
+    display: none;
+    animation: expand 0.8s ease infinite alternate;
+}
+
+@keyframes expand{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(5px);
+    }
+}
+
+.bankapp-to-bankapp-container .bankapp-to-bankapp-main-contentbox{
+    width: 100%;
+}
+
+.bankapp-to-bankapp-main-contentbox .account-typediv button{
+    width: 100%;
+    height: 80px;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    color: #ffffff;
+    color: white;
+    font-size: 120%;
+    padding-left: 20px;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 5px;
+    background-color: rgb(131, 145, 143);
+    background-color: hsl(172, 6%, 54%);
+    background-color: #82918f;
+}
+
+.account-typediv button:active{
+    outline: none;
+}
+
+.account-typediv button:focus{
+    outline: none;
+}
+
+.account-typediv .account-type{
+    margin-top: 10px;
+}
+
+.transfer hr{
+    margin: 10px 0px;
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 71%);
+    background-color: #b4b4b4;
+    background-color: rgb(180, 180, 180);
+}
+/*end of transfer box row style*/
+
+
+/*style for the access-to-access transaction progress bar and limit indicators*/
+.translimit {
+    color: rgb(54, 68, 73);
+    color: hsl(196, 15%, 25%);
+    color: #354348;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+progress {
+    width: 100%;
+    height: 8px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 83%);
+    background-color: #d3d3d3;
+    background-color: lightgrey;
+}
+
+progress::-moz-progress-bar{
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 83%);
+    background-color: #d3d3d3;
+    background-color: lightgrey;
+}
+
+progress::-moz-progress-value{
+   border-radius: 10px;
+   background-color: rgb(211, 3, 211);
+   background-color: hsl(300, 97%, 42%);
+   background-color: #d303d2;
+}
+
+progress::-webkit-progress-bar{
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 83%);
+    background-color: #d3d3d3;
+    background-color: lightgrey;
+}
+
+progress::-webkit-progress-value{
+   border-radius: 10px;
+   background-color: rgb(211, 3, 211);
+   background-color: hsl(300, 97%, 42%);
+   background-color: #d303d2;
+}
+
+.translimit .limit-text{
+    color: rgb(211, 3, 211);
+    color: hsl(300, 97%, 42%);
+    color: #d303d2;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.translimit .limit-text i{
+    padding: 0px;
+}
+
+.translimit .trans-remainder {
+    position: relative;
+    float: right;
+}
+
+.translimit .fa-stop{
+    color: hsl(0, 0%, 83%);
+    color: #d3d3d3;
+    color: lightgrey;
+}
+/*end of style for transaction progress bar and limit indicators */
+
+/*style for bankapp-to-bankapp form and network options*/
+.service-formdiv{
+    width: 100%;
+    color: hsl(0, 0%, 50%);
+    color: #808080;
+    color: grey;
+    padding: 10px 0px;
+}
+
+.service-form{
+    width: 100%;
+}
+
+.service-form input, select{
+    width: 95.5%;
+    height: 50px;
+    margin: 10px 0px;
+    color: hsl(0, 0%, 50%);
+    color: #808080;
+    color: grey;
+    padding-left: 10px;
+    border-radius: 4px;
+    border: 2px solid rgb(195, 196, 198);
+    border: 2px solid hsl(220, 3%, 77%);
+    border: 2px solid #c3c4c6;
+    background-color: rgb(232, 232, 232);
+    background-color: hsl(0, 0%, 91%);
+    background-color: #e9e9e9;
+}
+
+.service-form select{
+    width: 99%;
+    cursor: pointer;
+}
+
+.service-form select option{
+    padding: 10px;
+}
+
+.service-form input:focus, select:focus{
+    outline: 0;
+    color: rgb(54, 68, 73);
+    color: hsl(196, 15%, 25%);
+    color: #354348;
+    transition: 0.5s;
+    border-color: purple;
+}
+
+.service-form .amount{
+    color:hsl(300, 100%, 41%);
+    color:#cf00cf;
+    color:rgb(207, 0, 207);
+    font-weight: bold;
+}
+
+.service-form .proceedbtn{
+    width: 98.5%;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    color: #ffffff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: hsl(300, 99%, 29%);
+    background-color: #950195;
+    background-color: rgb(149, 1, 149);
+}
+
+.service-form .proceedbtn:hover{
+    transition: 0.5s;
+    background-color: hsl(300, 100%, 25%);
+    background-color: #800080;
+    background-color: purple;
+}
+
+.service-form .proceedbtn:active{
+    outline: none;
+}
+
+.service-form .proceedbtn:focus{
+    outline: none;
+}
+
+.service-form .networkbtns{
+    width: 100%;
+}
+
+.service-form .networkbtns button{
+    width: 23.4%;
+    height: 80px;
+    cursor: pointer;
+    border: 0px;
+}
+
+.service-form .networkbtns img{
+    width: 100%;
+    height: 80px;
+}
+
+.service-form .airtime-amountbtns {
+    text-align: center;
+}
+
+.service-form .airtime-amountbtns button {
+    width: 130px;
+    height: 40px;
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+    color: #ffffff;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: rgb(131, 145, 143);
+    background-color: hsl(172, 6%, 54%);
+    background-color: #82918f;
+}
+/*end of bankapp-to-bankapp form and network options*/
+
+/*style for folding box button*/
+.foldboxbtn{
+    width: 20%;
+    height: 10px;
+    margin: 0px 40%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: hsl(300, 100%, 31%);
+    background-color: #a000a0;
+    background-color: rgb(160, 0, 160);
+}
+
+.foldboxbtn:active{
+    outline: none;
+}
+
+.foldboxbtn:focus{
+    outline: none;
+}
+/*end of folding box button style*/
+
+/*style for other bank transfer box*/
+.otherbank-container{
+    margin-left: 1%;
+}
+/*end of style for other bank transfer box*/
+
+.paymentbox{
+    padding-bottom: 150px;
+}
+
+/*style for nearby payment box*/
+.locationdiv {
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.locationdiv .location-meter {
+    font-size: 100px;
+    color: rgb(211, 3, 211);
+    color: hsl(300, 97%, 42%);
+    color: #d303d2;
+    text-align: center;
+}
+
+.locationdiv .location-meter i {
+    margin: 10px;
+    animation: rotate 3s infinite;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
+
+.locationdiv .locationdiv-text {
+    margin-top: 50px;
+    text-align: center;
+}
+/*end of nearby payment box style*/
+
+/*style for webpage scroll-to-top button*/
+.btnScrollToTop {
+    width: 50px;
+    height: 50px;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    color: #ffffff;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    bottom: 70px;
+    opacity: 0;
+    font-size: 22px;
+    z-index: 1;
+    background-color: hsl(300, 100%, 31%);
+    background-color: #a000a0;
+    background-color: rgb(160, 0, 160);
+}
+
+
+.btnScrollToTop.active {
+    opacity: 1;
+    transition: 1s;
+    color: hsl(0, 0%, 100%);
+    color: #ffffff;
+    color: white;
+    pointer-events: auto;
+    background-color: hsl(300, 100%, 31%);
+    background-color: #a000a0;
+    background-color: rgb(160, 0, 160);
+}
+
+.btnScrollToTop.active:hover{
+    color: hsl(0, 0%, 100%);
+    color: #ffffff;
+    color: white;
+}
+/*end of scroll-to-top style*/
+
+
+
+@media(max-width: 1000px){
+    .service-form select{
+        width: 100%;
+    }
+
+    .pageintrodiv{
+        height: 250px;
+        padding-top: 50px;
+    }
+
+    .pageintrodiv h1{
+        width: 50%;
+    }
+}
+
+@media(max-width: 900px){
+    .pageintrodiv{
+        padding-bottom: 0px!important;
+    }
+
+    .pageintrodiv h1{
+        font-size: 30px;
+    }
+
+    .pageintrodiv img{
+        width: 40%;
+    }
+
+    .transfer{
+        width: 80%;
+    }
+
+    .bankapp-to-bankapp-container{
+        clear: both;
+        width: 80%;
+    }
+
+    .service-form input{
+        width: 96%;
+    }
+
+    .service-form select{
+        width: 98.5%;
+    }    
+
+    .service-form .proceedbtn{
+        width: 98%;
+    }
+
+    .otherbank-container{
+        margin-top: 100px;
+        margin-left: 0%;
+    }
+
+    .bankapp-to-bankapp-container .illustrationsvg{
+        width: 70%;
+        margin-left: 14%;
+    }
+}
+
+@media(max-width: 650px){
+    .service-form select{
+        width: 99.3%;
+    }   
+}
+
+@media(max-width: 550px){
+    .pageintrodiv{
+        height: 350px;
+    }
+
+    .service-form select{
+        width: 100%;
+    }   
+}
+
+@media(max-width: 500px){
+    .pageintrodiv{
+        height: 300px;
+    }
+
+    .pageintrodiv h1{
+        font-size: 25px;
+    }
+
+    .searchformdiv{
+        width: 100%;
+        display: block;
+        position: relative;
+        top: 0;
+    }
+    
+    .searchformdiv form input{
+        height: 40px!important;
+        width: 100%!important;
+        padding-left: 3%!important;
+        border-radius: 0px;
+    }
+
+    .searchformdiv.active{
+        width: 100%;
+        z-index: 1;
+        display: block;
+        position: fixed;
+    }
+
+    .transfer{
+        width: 80%;
+    }
+
+    .bankapp-to-bankapp-container{
+        width: 90%;
+    }
+
+    .service-form select{
+        width: 99.5%;
+    }
+
+    .service-form .proceedbtn{
+        width: 99.5%;
+    }
+
+
+    .bankapp-to-bankapp-container .illustrationsvg{
+        width: 80%;
+        margin-left: 5%;
+    }
+}
+
+@media(max-width: 430px){
+    .pageintrodiv{
+        height: 200px;
+    }
+
+    .pageintrodiv h1{
+        font-size: 20px;
+    }
+
+    .transfer{
+        width: 95%;
+        padding-left: 5%;
+    }
+    
+    .service-form input{
+        width: 94%;
+    }
+
+    .service-form select{
+        width: 98.1%;
+    }
+
+    .service-form .proceedbtn{
+        width: 97.3%;
+    }
+
+    .btnScrollToTop {
+        width: 40px;
+        height: 40px;
+        right: 5px;
+        bottom: 95px;
+    }
+}
+
+@media(max-width: 360px){
+    .pageintrodiv{
+        height: 195px;
+    }
+
+    .pageintrodiv h1{
+        font-size: 18px;
+    }
+
+    .service-form select{
+        width: 98%;
+    }
+
+    .service-form .proceedbtn{
+        width: 98%;
+    }
+}
+
+@media(max-width: 330px){
+    .service-form select{
+        width: 99.4%;
+    }
+}
+
+
+@media(max-width: 310px){
+    .pageintrodiv h1{
+        font-size: 18px;
+    }
+
+    .service-form .proceedbtn{
+        width: 98.5%;
+    }
+}
+
+@media(max-width: 300px){
+    .pageintrodiv{
+        height: 200px;
+    }
+
+    .service-form select{
+        width: 100%;
+    }
+}
