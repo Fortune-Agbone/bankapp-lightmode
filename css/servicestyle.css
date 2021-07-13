@@ -169,6 +169,7 @@
 .bankapp-to-bankapp-container .illustrationsvg{
     width: 100%;
     display: none;
+    filter: drop-shadow(1px 1px 5px grey);
     animation: expand 0.8s ease infinite alternate;
 }
 

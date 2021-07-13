@@ -72,29 +72,33 @@ button:active{
 }
 
 .pageloaderdiv img{
-    width: 197px;
-    height: 178px;
+    width: 190px;
+    height: 180px;
     -webkit-animation: appicon 0.8s ease infinite alternate;
             animation: appicon 0.8s ease infinite alternate;
 }
 
 @-webkit-keyframes appicon{
     from{
-        transform: translateY(0px);
+        width: 190px;
+        height: 180px;
     }
 
     to{
-        transform: translateY(10px);
+        width: 250px;
+        height: 240px;
     }
 }
 
 @keyframes appicon{
     from{
-        transform: translateY(0px);
+        width: 190px;
+        height: 180px;
     }
 
     to{
-        transform: translateY(10px);
+        width: 250px;
+        height: 240px;
     }
 }
 
@@ -590,10 +594,6 @@ footer hr{
         width: 130px;
     }
 
-    .nav-btns footer{
-        font-size: 13px;
-    }
-
     .formdiv{
         width: 250px;
         margin: 0 auto;
@@ -608,6 +608,10 @@ footer hr{
         position: fixed;
         right: 15px;
         bottom: 100px;
+    }
+    
+    .nav-btns footer{
+        font-size: 13px;
     }
 }
 
@@ -667,6 +671,14 @@ footer hr{
 
     .formdiv{
         margin-top: 15vh;
+    }
+}
+
+@media(max-height: 480px){
+    .bankapp-mode{
+        position: fixed;
+        right: 15px;
+        bottom: 100px;
     }
 }
 
